@@ -1,4 +1,4 @@
-<div>
+<div class="m-2">
   <input (click)="completeItem()" [checked]="item.inBasket" class="form-checkbox checkbox" type="checkbox"/>
 
   <input #inputElementRef (change)="updateItem(inputElementRef.value)" [ngClass]="{ 'complete': item.inBasket }" [value]="item.itemName">
