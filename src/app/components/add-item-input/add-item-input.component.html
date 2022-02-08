@@ -1,0 +1,6 @@
+<input #inputElementRef
+       (keyup.enter)="submitValue(inputElementRef.value)"
+       [formControl]="itemName"
+       class="input"
+       placeholder="New groceries list item"/>
+<button (click)="submitValue(inputElementRef.value)" class="btn btn-green">+ Add</button>

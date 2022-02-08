@@ -1,0 +1,10 @@
+<rd-add-item-input (submit)="addItem($event)"></rd-add-item-input>
+
+<ul>
+  <li *ngFor="let item of groceriesList">
+    <rd-groceries-item
+      (remove)="removeItem($event)"
+      (update)="updateItem($event.item, $event.changes)"
+      [item]="item"></rd-groceries-item>
+  </li>
+</ul>

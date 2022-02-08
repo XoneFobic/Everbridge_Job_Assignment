@@ -1,0 +1,7 @@
+<div>
+  <input (click)="completeItem()" [checked]="item.inBasket" class="form-checkbox checkbox" type="checkbox"/>
+
+  <input #inputElementRef (change)="updateItem(inputElementRef.value)" [ngClass]="{ 'complete': item.inBasket }" [value]="item.itemName">
+
+  <button (click)="removeItem()" class="btn btn-red">Remove</button>
+</div>
