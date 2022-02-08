@@ -12,3 +12,6 @@ _So, basically the tutorial ToDo-List application?_
 # Tools used
 * Angular CLI
 * TailwindCSS
+
+# Disclaimer
+* As this is Angular 13, IE11 support has been dropped.
